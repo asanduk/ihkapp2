@@ -1,0 +1,9 @@
+.option-button {
+    margin: 5px;
+  }
+
+  .selected .circle.outline.icon {
+    color: rgb(0, 132, 255); 
+    font-weight: bold; 
+  }
+  

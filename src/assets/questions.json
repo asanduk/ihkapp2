@@ -1,0 +1,724 @@
+{
+  "Fragen": [
+    {
+      "ID": 1,
+      "Frage": "Was ist Selenium?",
+      "Antworten": [
+        {
+          "Text": "Selenium ist ein Open-Source-Tool für die Automatisierung von Webbrowsern.",
+          "Korrekt": true
+        },
+        {
+          "Text": "Selenium ist eine Programmiersprache.",
+          "Korrekt": false
+        },
+        {
+          "Text": "Selenium ist eine Datenbankverwaltungssoftware.",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 2,
+      "Frage": "Welche Selenium WebDriver-Funktion öffnet eine Webseite?",
+      "Antworten": [
+        {
+          "Text": "driver.get(\"http://www.google.com\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.open(\"http://www.google.com\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.website(\"http://www.google.com\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 3,
+      "Frage": "Wie wird die Funktion zum Navigieren zur vorherigen Seite aufgerufen?",
+      "Antworten": [
+        {
+          "Text": "driver.back()",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.previous()",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.navigate_back()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 4,
+      "Frage": "Welche Funktion wird verwendet, um den Browser zu schließen?",
+      "Antworten": [
+        {
+          "Text": "driver.quit()",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.close()",
+          "Korrekt": false
+        },
+        {
+          "Text": "browser.quit()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 5,
+      "Frage": "Welche Funktion wird verwendet, um einen Screenshot des gesamten Browserfensters zu machen?",
+      "Antworten": [
+        {
+          "Text": "driver.get_screenshot_as_file(\"filename\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.capture_screenshot(\"filename\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.screenshot(\"filename\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 6,
+      "Frage": "Welche Funktion wird verwendet, um einen Screenshot eines einzelnen WebElements zu machen?",
+      "Antworten": [
+        {
+          "Text": "element.screenshot(\"filename\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.take_screenshot(\"filename\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.get_screenshot(\"filename\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 7,
+      "Frage": "Wie wird ein WebElement gefunden, indem sein ID-Attribut verwendet wird?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_id(\"id\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"id\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_id(\"id\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 8,
+      "Frage": "Wie wird ein WebElement gefunden, indem sein Klassenname verwendet wird?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_class_name(\"className\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"className\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_class(\"className\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 9,
+      "Frage": "Welche Wartemechanismen stehen in Selenium zur Verfügung?",
+      "Antworten": [
+        {
+          "Text": "time.sleep(5), driver.implicitly_wait(10), WebDriverWait(driver, 10)",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.wait(10), WebDriverWait(driver, 5), time.sleep(10)",
+          "Korrekt": false
+        },
+        {
+          "Text": "time.wait(10), driver.implicitly_wait(5), WebDriverWait(driver, 10)",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 10,
+      "Frage": "Wie wird die Funktion zum Ausführen von JavaScript in Selenium aufgerufen?",
+      "Antworten": [
+        {
+          "Text": "driver.execute_script(\"javascript\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.run_script(\"javascript\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.execute_javascript(\"javascript\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 11,
+      "Frage": "Wie kann der Fokus auf ein anderes Browserfenster gewechselt werden?",
+      "Antworten": [
+        {
+          "Text": "driver.switch_to.window(handle)",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.change_window(handle)",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.focus_window(handle)",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 12,
+      "Frage": "Wie kann der Fokus auf einen Frame gewechselt werden?",
+      "Antworten": [
+        {
+          "Text": "driver.switch_to.frame(frame)",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.switch_frame(frame)",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.focus_frame(frame)",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 13,
+      "Frage": "Wie kann auf einen Alert zugegriffen werden?",
+      "Antworten": [
+        {
+          "Text": "alert = driver.switch_to.alert",
+          "Korrekt": true
+        },
+        {
+          "Text": "alert = driver.get_alert()",
+          "Korrekt": false
+        },
+        {
+          "Text": "alert = driver.find_alert()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 14,
+      "Frage": "Wie kann ein Element durch seinen Namen gefunden werden?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_name(\"name\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"name\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_name(\"name\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 15,
+      "Frage": "Wie kann ein Element durch den Tag-Namen gefunden werden?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_tag_name(\"tagName\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"tagName\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_tag(\"tagName\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 16,
+      "Frage": "Welche Funktion wird verwendet, um auf ein Element durch seinen Link-Text zuzugreifen?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_link_text(\"linkText\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"linkText\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_link_text(\"linkText\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 17,
+      "Frage": "Wie kann auf ein Element durch einen Teil des Link-Textes zugegriffen werden?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_partial_link_text(\"text\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"text\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_partial_link_text(\"text\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 18,
+      "Frage": "Welche Funktion wird verwendet, um auf ein Element durch XPath zuzugreifen?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_xpath(\"xpath\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"xpath\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_xpath(\"xpath\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 19,
+      "Frage": "Welche Funktion wird verwendet, um auf ein Element durch CSS-Selektor zuzugreifen?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_css_selector(\"selector\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_element(\"selector\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element_by_css(\"selector\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 20,
+      "Frage": "Welche Funktion wird verwendet, um die Größe eines Elements zu erhalten?",
+      "Antworten": [
+        {
+          "Text": "element.size",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.get_size()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.get_size",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 21,
+      "Frage": "Wie wird überprüft, ob ein Element sichtbar ist?",
+      "Antworten": [
+        {
+          "Text": "element.is_displayed()",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.visible()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.visibility()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 22,
+      "Frage": "Wie wird überprüft, ob ein Element aktiviert ist?",
+      "Antworten": [
+        {
+          "Text": "element.is_enabled()",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.active()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.enabled()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 23,
+      "Frage": "Wie wird überprüft, ob ein Element ausgewählt ist?",
+      "Antworten": [
+        {
+          "Text": "element.is_selected()",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.selected()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.select_state()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 24,
+      "Frage": "Welche Funktion wird verwendet, um den Wert eines Attributs zu erhalten?",
+      "Antworten": [
+        {
+          "Text": "element.get_attribute(\"attribute\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.attribute(\"attribute\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.get(\"attribute\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 25,
+      "Frage": "Welche Funktion wird verwendet, um den Text eines Elements zu erhalten?",
+      "Antworten": [
+        {
+          "Text": "element.text",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.get_text()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.get_text",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 26,
+      "Frage": "Welche Funktion wird verwendet, um den Standort eines Elements zu erhalten?",
+      "Antworten": [
+        {
+          "Text": "element.location",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.get_location()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.get_location",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 27,
+      "Frage": "Wie wird der Zustand eines Elements manipuliert, um Text einzugeben?",
+      "Antworten": [
+        {
+          "Text": "element.send_keys(\"text\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.enter_text(\"text\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.type(\"text\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 28,
+      "Frage": "Welche Funktion wird verwendet, um die Eingabe in ein Formularfeld zu bestätigen?",
+      "Antworten": [
+        {
+          "Text": "element.submit()",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.confirm()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.accept()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 29,
+      "Frage": "Welche Funktion wird verwendet, um auf einen Alert zu reagieren?",
+      "Antworten": [
+        {
+          "Text": "alert.accept(), alert.dismiss()",
+          "Korrekt": true
+        },
+        {
+          "Text": "alert.respond()",
+          "Korrekt": false
+        },
+        {
+          "Text": "alert.action()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 30,
+      "Frage": "Welche Funktion wird verwendet, um die erste Instanz eines Elements zu finden?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element()",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.first_element()",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_element()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 31,
+      "Frage": "Welche Funktion wird verwendet, um auf den Wert eines CSS-Attributs zuzugreifen?",
+      "Antworten": [
+        {
+          "Text": "element.value_of_css_property()",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.get_css_property()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.css_property()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 32,
+      "Frage": "Welche Funktion wird verwendet, um auf den Titel der Seite zuzugreifen?",
+      "Antworten": [
+        {
+          "Text": "driver.title",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.get_title()",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.page_title",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 33,
+      "Frage": "Wie wird überprüft, ob ein Element ausgewählt werden kann?",
+      "Antworten": [
+        {
+          "Text": "element.is_enabled()",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.selectable()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.can_be_selected()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 34,
+      "Frage": "Wie wird überprüft, ob ein Element auswählbar ist?",
+      "Antworten": [
+        {
+          "Text": "element.is_selected()",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.selectable()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.can_be_selected()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 35,
+      "Frage": "Wie wird ein Alert abgelehnt?",
+      "Antworten": [
+        {
+          "Text": "alert.dismiss()",
+          "Korrekt": true
+        },
+        {
+          "Text": "alert.reject()",
+          "Korrekt": false
+        },
+        {
+          "Text": "alert.decline()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 36,
+      "Frage": "Welche Funktion wird verwendet, um auf einen bestimmten Alert zuzugreifen?",
+      "Antworten": [
+        {
+          "Text": "driver.switch_to.alert",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_alert()",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_alert()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 37,
+      "Frage": "Welche Funktion wird verwendet, um einen DDL (Dropdown-Liste) Wert auszuwählen?",
+      "Antworten": [
+        {
+          "Text": "element.select_by_visible_text(\"text\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.select_by_text(\"text\")",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.select(\"text\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 38,
+      "Frage": "Welche Funktion wird verwendet, um eine Liste der Optionen in einem DDL zu erhalten?",
+      "Antworten": [
+        {
+          "Text": "element.options",
+          "Korrekt": true
+        },
+        {
+          "Text": "element.get_options()",
+          "Korrekt": false
+        },
+        {
+          "Text": "element.get_dropdown_options()",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 39,
+      "Frage": "Welche Funktion wird verwendet, um eine Tabelle zu finden?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_tag_name(\"table\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_table()",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_table(\"table\")",
+          "Korrekt": false
+        }
+      ]
+    },
+    {
+      "ID": 40,
+      "Frage": "Welche Funktion wird verwendet, um eine Zelle in einer Tabelle zu finden?",
+      "Antworten": [
+        {
+          "Text": "driver.find_element_by_tag_name(\"td\")",
+          "Korrekt": true
+        },
+        {
+          "Text": "driver.find_cell()",
+          "Korrekt": false
+        },
+        {
+          "Text": "driver.get_cell(\"td\")",
+          "Korrekt": false
+        }
+      ]
+    }
+  ]
+}

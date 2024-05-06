@@ -1,0 +1,48 @@
+<div class="ui container" *ngIf="questions.length > 0">
+  <div class="ui segment">
+    <h2 class="ui header">Quiz</h2>
+    <div class="ui progress">
+      <div class="bar" [style.width.%]="progressValue"></div> <!-- Progress bar -->
+    </div>
+    <p>Question {{currentQuestionIndex + 1}} of {{questions.length}}</p>
+    <p>{{questions[currentQuestionIndex].Frage}}</p>
+    <div class="ui form">
+        <div class="grouped fields">
+          <div class="field" *ngFor="let option of questions[currentQuestionIndex].Antworten; let i = index">
+            <button class="ui button option-button" [class.selected]="selectedOptionIndex === i" (click)="selectOption(i)">
+              <i class="circle outline icon" [ngClass]="{'selected': selectedOptionIndex === i}"></i>{{option.Text}}
+            </button>
+          </div>
+        </div>
+    </div>
+      
+    <div class="ui success message" *ngIf="selectedOptionIndex !== null && questions[currentQuestionIndex].Antworten[selectedOptionIndex].Korrekt">
+      <i class="close icon" (click)="selectedOptionIndex = null"></i>
+      <div class="header">
+        Correct!
+      </div>
+      <p>Well done!</p>
+    </div>
+    <div class="ui error message" *ngIf="selectedOptionIndex !== null && !questions[currentQuestionIndex].Antworten[selectedOptionIndex].Korrekt">
+      <i class="close icon" (click)="selectedOptionIndex = null"></i>
+      <div class="header">
+        Incorrect!
+      </div>
+      <p>Try again next time!</p>
+    </div>
+    <div class="ui buttons">
+      <button class="ui button" (click)="prevQuestion()" [disabled]="currentQuestionIndex === 0"><i class="angle left icon"></i> Back</button>
+      <button class="ui button primary" (click)="nextQuestion()" [disabled]="currentQuestionIndex === questions.length - 1">Next <i class="angle right icon"></i></button>
+      <button class="ui button positive" (click)="finishQuiz()">Finish</button>
+    </div>
+  </div>
+</div>
+
+<!-- Statistic section -->
+<div class="ui container" *ngIf="showStatistics">
+  <div class="ui segment">
+    <h2 class="ui header">Quiz Statistics</h2>
+    <p>Correct Answers: {{ correctAnswers }}</p>
+    <p>Incorrect Answers: {{ incorrectAnswers }}</p>
+  </div>
+</div>

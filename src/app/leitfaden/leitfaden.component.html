@@ -1,0 +1,92 @@
+  <div class="ui container">
+    <div class="ui stackable grid">
+      <!-- Linke Seite Menü -->
+      <div class="four wide column">
+        <div class="ui vertical fluid tabular menu">
+          <a class="item" [class.active]="selectedContent === 'whatIsSelenium'" (click)="showContent('whatIsSelenium')">
+            <i class="info circle icon"></i>
+            Was ist Selenium?
+          </a>
+          <a class="item" [class.active]="selectedContent === 'components'" (click)="showContent('components')">
+            <i class="cogs icon"></i>
+            Selenium-Komponenten
+          </a>
+          <a class="item" [class.active]="selectedContent === 'gettingStarted'" (click)="showContent('gettingStarted')">
+            <i class="play circle icon"></i>
+            Erste Schritte
+          </a>
+          <a class="item" [class.active]="selectedContent === 'advancedTopics'" (click)="showContent('advancedTopics')">
+            <i class="graduation cap icon"></i>
+            Fortgeschrittene Themen
+          </a>
+          <a class="item" [class.active]="selectedContent === 'bestPractices'" (click)="showContent('bestPractices')">
+            <i class="thumbs up icon"></i>
+            Beste Praktiken
+          </a>
+        </div>
+      </div>
+  
+      <!-- Rechte Seite Inhalt -->
+      <div class="twelve wide column">
+        <div *ngIf="selectedContent === 'whatIsSelenium'" class="ui segment">
+          <h2 class="ui header">Was ist Selenium?</h2>
+          <p>Selenium ist ein Webbrowser-Automatisierungstool, das zur Automatisierung von Webanwendungen in verschiedenen Browsern und auf verschiedenen Plattformen verwendet wird.</p>
+          <p>Es bietet eine Reihe von Tools für verschiedene Testanforderungen wie:</p>
+          <ul class="ui list">
+            <li>Funktionstests</li>
+            <li>Regressionstests</li>
+            <li>Browserkompatibilitätstests</li>
+            <li>Performance-Tests</li>
+            <li>Und mehr...</li>
+          </ul>
+          <p>Darüber hinaus unterstützt Selenium verschiedene Programmiersprachen wie Java, Python, C# usw., was es vielseitig für verschiedene Entwicklungsumgebungen macht.</p>
+        </div>
+        <div *ngIf="selectedContent === 'components'" class="ui segment">
+          <h2 class="ui header">Selenium-Komponenten</h2>
+          <p>Selenium besteht aus vier Hauptkomponenten:</p>
+          <ul class="ui list">
+            <li><strong>Selenium IDE:</strong> Integrierte Entwicklungsumgebung zum Erstellen von Selenium-Testfällen.</li>
+            <li><strong>Selenium WebDriver:</strong> Eine Sammlung von sprachspezifischen Bindungen zum direkten Steuern eines Browsers.</li>
+            <li><strong>Selenium Grid:</strong> Verteilt die Testausführung gleichzeitig auf mehreren Maschinen.</li>
+            <li><strong>Selenium Remote Control (RC):</strong> Ein veraltetes Vorgängermodell von WebDriver.</li>
+          </ul>
+          <p>Jede Komponente erfüllt einen bestimmten Zweck im Selenium-Ökosystem und erleichtert verschiedene Aspekte des Webtestings und der Automatisierung.</p>
+        </div>
+        <div *ngIf="selectedContent === 'gettingStarted'" class="ui segment">
+          <h2 class="ui header">Erste Schritte</h2>
+          <p>Um mit Selenium zu beginnen, können Sie die offizielle Website besuchen und die Dokumentation erkunden: <a href="https://www.selenium.dev" target="_blank">https://www.selenium.dev</a></p>
+          <p>Für weitere Informationen zur Installation von Selenium und zur grundlegenden Verwendung können Sie die folgenden Ressourcen überprüfen:</p>
+          <ul class="ui list">
+            <li><a href="https://www.tutorialspoint.com/selenium/index.htm" target="_blank">Selenium Tutorial - Tutorialspoint</a></li>
+            <li><a href="https://www.guru99.com/selenium-tutorial.html" target="_blank">Selenium Tutorial - Guru99</a></li>
+            <li><a href="https://www.softwaretestinghelp.com/selenium-tutorial-1/" target="_blank">Selenium Tutorial - Software Testing Help</a></li>
+          </ul>
+          <p>Diese Ressourcen bieten Schritt-für-Schritt-Anleitungen und Tutorials für Anfänger, um mit Selenium für die Webautomatisierung zu beginnen.</p>
+        </div>
+        <div *ngIf="selectedContent === 'advancedTopics'" class="ui segment">
+          <h2 class="ui header">Fortgeschrittene Themen</h2>
+          <p>Nachdem Sie mit den Grundlagen von Selenium vertraut sind, können Sie fortgeschrittene Themen wie folgt erkunden:</p>
+          <ul class="ui list">
+            <li>Seitenobjektmodell (POM) für eine bessere Testwartung</li>
+            <li>Umgang mit dynamischen Elementen und Wartezeiten</li>
+            <li>Integration mit Continuous Integration (CI)-Tools wie Jenkins</li>
+            <li>Paralleles Testen für schnellere Ausführung</li>
+            <li>Integration von Testframeworks (z.B. TestNG, JUnit)</li>
+          </ul>
+          <p>Das Beherrschen dieser Themen wird Ihre Kompetenz in der Selenium-Automatisierung verbessern und es Ihnen ermöglichen, komplexe Test-Szenarien zu bewältigen.</p>
+        </div>
+        <div *ngIf="selectedContent === 'bestPractices'" class="ui segment">
+          <h2 class="ui header">Beste Praktiken</h2>
+          <p>Die Einhaltung bester Praktiken gewährleistet eine effiziente und wartbare Selenium-Testautomatisierung:</p>
+          <ul class="ui list">
+            <li>Schreiben Sie modulare und wiederverwendbare Testskripte</li>
+            <li>Verwenden Sie explizite Wartezeiten anstelle von impliziten Wartezeiten</li>
+            <li>Implementieren Sie eine ordnungsgemäße Ausnahmehandhabung</li>
+            <li>Aktualisieren Sie die Locator-Elemente regelmäßig, um die Teststabilität zu gewährleisten</li>
+            <li>Führen Sie Code-Reviews durch und pflegen Sie die Dokumentation</li>
+          </ul>
+          <p>Die Einhaltung dieser Praktiken verbessert die Zuverlässigkeit und Skalierbarkeit Ihres Selenium-Test-Setups.</p>
+        </div>
+      </div>
+    </div>
+  </div>
